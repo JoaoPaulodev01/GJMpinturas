@@ -1,0 +1,140 @@
+    <!DOCTYPE html>
+    <html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../CSS/style.css">
+        <link rel="stylesheet" href="../CSS/carousel.css">
+        <link rel="shortcut icon" href="../imgs/logogjm.png" type="image/x-icon">
+        <title>GJM Pinturas</title>
+    </head>
+    <body>
+        <section class="section1">
+            <div class="apresentacao">
+                <img src="../imgs/logogjm.png" alt="logo">
+                <h1>CORES QUE INSPIRAM,<br>
+                QUALIDADE QUE TRANSFORMA</h1>
+                <p>Seu espaço merece um novo visual. Cuidamos de cada<br>
+                etapa para garantir um resultado perfeito.</p>
+                <div class="linkcontato"><a href="#section3">TRANSFORME SEU AMBIENTE</a></div>
+            </div>
+            <div class="foto">
+                <img src="../imgs/cliente.jpg" alt="">
+            </div>
+        </section>
+        <section class="section2">
+            <h1>ALGUNS DOS MEUS TRABALHOS:</h1>
+            <div class="slider">
+                <div class="slides">
+
+                    <input type="radio" name="radio-btn" id="radio1">
+                    <input type="radio" name="radio-btn" id="radio2">
+                    <input type="radio" name="radio-btn" id="radio3">
+                    <input type="radio" name="radio-btn" id="radio4">
+                    <input type="radio" name="radio-btn" id="radio5">
+                    
+                    <div class="slide first">
+                        <img src="../imgs/img1.jpg" alt="img1">
+                    </div>
+                    <div class="slide">
+                        <img src="../imgs/img2.jpg" alt="img2">
+                    </div>
+                    <div class="slide">
+                        <img src="../imgs/img3.jpg" alt="img3">
+                    </div>
+                    <div class="slide">
+                        <img src="../imgs/img4.jpg" alt="img4">
+                    </div>
+                    <div class="slide">
+                        <img src="../imgs/img5.jpg" alt="img5">
+                    </div>
+
+                    <div class="navigation-auto">
+                        <div class="auto-btn1"></div>
+                        <div class="auto-btn2"></div>
+                        <div class="auto-btn3"></div>
+                        <div class="auto-btn4"></div>
+                        <div class="auto-btn5"></div>
+                    </div>
+
+                </div>
+
+                <div class="manual-navigation">
+                    <label for="radio1" class="manual-btn"></label>
+                    <label for="radio2" class="manual-btn"></label>
+                    <label for="radio3" class="manual-btn"></label>
+                    <label for="radio4" class="manual-btn"></label>
+                    <label for="radio5" class="manual-btn"></label>
+                </div>
+
+            </div>
+        </section>
+        <section class="section3" id="section3">
+            <div class="form-container">
+                <form id="orcamentoForm" method="POST">
+                    <h1>Solicite seu Orçamento</h1>
+                    <div class="form-group">
+                        <label for="nome">Nome Completo:</label>
+                        <input type="text" id="nome" name="nome" required placeholder="Digite seu nome">
+                    </div>
+                    <div class="form-group">
+                        <label for="telefone">Telefone:</label>
+                        <input type="tel" id="telefone" name="telefone" required placeholder="(XX) XXXXX-XXXX">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">E-mail (opcional):</label>
+                        <input type="email" id="email" name="email" placeholder="seuemail@exemplo.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="endereco">Endereço do serviço:</label>
+                        <input type="text" id="endereco" name="endereco" required placeholder="Rua, número, bairro, cidade">
+                    </div>
+                    <div class="form-group">
+                        <label for="servico">Serviço desejado:</label>
+                        <select id="servico" name="servico" required>
+                            <option value="">Selecione...</option>
+                            <option value="pintura_interna">Pintura Interna</option>
+                            <option value="pintura_externa">Pintura Externa</option>
+                            <option value="reparos_e_acabamentos">Reparos e Acabamentos</option>
+                            <option value="outro">Outro</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="descricao">Descrição do serviço (opcional):</label>
+                        <textarea id="descricao" name="descricao" rows="4"
+                            placeholder="Detalhes adicionais ou observações"></textarea>
+                    </div>
+                    <button type="submit">Enviar Solicitação</button>
+                </form>
+                <div class="image-container">
+                    <img src="../imgs/cartaodevisita.png" alt="Cartão de Visita">
+                </div>
+            </div>
+        </section>
+        <footer class="footer">
+            <div class="footer-container">
+                <div class="footer-icons">
+                    <a href="https://www.instagram.com/gjm.pinturaslimitadas" target="_blank" aria-label="Instagram">
+                        <img src="../imgs/instagram-icon.png" alt="Instagram">
+                    </a>
+                    <a href="https://wa.me/553196192183" target="_blank" aria-label="WhatsApp">
+                        <img src="../imgs/whatsapp-icon.png" alt="WhatsApp">
+                    </a>
+                    <a href="tel:+5531996192183" aria-label="Telefone">
+                        <img src="../imgs/phone-icon.png" alt="Telefone">
+                    </a>
+                </div>
+        
+                <p class="footer-text">TODOS OS DIREITOS RESERVADOS GJM PINTURAS LTDA <sup>®</sup></p>
+        
+                <div class="footer-logo">
+                    <img src="../imgs/logogjm.png" alt="Logo GJM Pinturas">
+                </div>
+            </div>
+        </footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+        <script src="../JavaScript/script.js"></script>
+        <script src="../../BackEnd/save.js"></script>
+    </body>
+    </html>
