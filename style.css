@@ -348,4 +348,28 @@ body {
         line-height: 1.4;
         max-width: 300px;
     }
+
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #101010;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(180deg, #505050, #202020);
+    border-radius: 10px;
+    transition: background 0.3s ease;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(180deg, #707070, #303030);
+}
+
+::-webkit-scrollbar-corner {
+    background: transparent;
 }
